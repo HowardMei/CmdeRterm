@@ -1,0 +1,40 @@
+termcap -lf
+ 
+
+.* text eol=lf
+
+*_ binary
+
+*.dll binary
+
+*.pdf binary
+
+*.so binary
+
+*.wav binary
+
+*.rar binary
+
+*.zip binary
+
+*.tar binary
+
+*.gz binary
+
+*.xz binary
+
+*.7z binary
+
+*.x32 binary
+
+*.x64 binary
+
+*.cmd binary
+
+*.exe binary
+
+*.bat binary
+
+*.sln binary
+
+*.vcproj binary
