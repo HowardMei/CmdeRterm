@@ -1,6 +1,6 @@
-WIN_PATH=/c/Windows/system32:/c/Windows:/c/Windows/System32/WindowsPowerShell/v1.0/:/d/ProgramData/chocolatey/bin:/d/Users/MHDD/AppData/Local/Pandoc/:/d/HashiCorp/Vagrant/bin:/d/HashiCorp/Packer:/d/PROGRA~2/Oracle/VirtualBox:/d/PROGRA~3/Git/cmd:/d/Ruby22-x64/bin:/d/Miniconda:/d/Miniconda/Scripts
+LIMITED_WIN_PATH=/c/Windows/system32:/c/Windows:/c/Windows/System32/WindowsPowerShell/v1.0/:/d/ProgramData/chocolatey/bin:/d/Users/MHDD/AppData/Local/Pandoc/:/d/HashiCorp/Vagrant/bin:/d/HashiCorp/Packer:/d/PROGRA~2/Oracle/VirtualBox:/d/PROGRA~3/Git/cmd:/d/Ruby22-x64/bin:/d/Miniconda:/d/Miniconda/Scripts
 
-export PATH=$WIN_PATH:$CMDER_ROOT/bin:$CMDER_ROOT/vendor/msysgit/bin
+export PATH=$LIMITED_WIN_PATH:$CMDER_ROOT/bin:$CMDER_ROOT/vendor/msysgit/bin
  
 alias python="/d/Miniconda/python.exe"
 alias ruby="/d/Ruby22-x64/bin/ruby.exe"
