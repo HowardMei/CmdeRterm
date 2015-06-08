@@ -6,7 +6,7 @@
 @if not defined CMDER_ROOT (
     for /f "delims=" %%i in ("%ConEmuDir%\..\..") do @set CMDER_ROOT=%%~fi
 )
-@echo %CMDER_ROOT%
+
 :: Change the prompt style
 :: Mmm tasty lamb
 @prompt $E[1;32;40m$P$S{git}{hg}$S$_$E[1;30;40m{lamb}$S$E[0m
@@ -38,13 +38,13 @@
 
 :: Add git to the path
 @if defined GIT_INSTALL_ROOT (
-    set "PATH=%GIT_INSTALL_ROOT%\bin;%GIT_INSTALL_ROOT%\share\vim\vim74;%PATH%"
+    set "PATH=%GIT_INSTALL_ROOT%\sbin;%GIT_INSTALL_ROOT%\bin;%GIT_INSTALL_ROOT%\share\vim\vim74;%PATH%"
     :: define SVN_SSH so we can use git svn with ssh svn repositories
     if not defined SVN_SSH set "SVN_SSH=%GIT_INSTALL_ROOT:\=\\%\\bin\\ssh.exe"
 )
 
 :: Enhance Path
-@set PATH=%CMDER_ROOT%\bin;%PATH%;%CMDER_ROOT%
+@set PATH=.;%CMDER_ROOT%\bin;%PATH%;%CMDER_ROOT%
 
 :: Add aliases
 @doskey /macrofile="%CMDER_ROOT%\config\aliases"

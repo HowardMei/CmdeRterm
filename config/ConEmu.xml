@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2015-06-07 03:29:18" build="150513">
-			<value name="StartType" type="hex" data="02"/>
+		<key name=".Vanilla" modified="2015-06-08 14:36:57" build="150513">
+			<value name="StartType" type="hex" data="03"/>
 			<value name="CmdLine" type="string" data=""/>
 			<value name="StartTasksFile" type="string" data=""/>
-			<value name="StartTasksName" type="string" data="{Bash(msys)}"/>
+			<value name="StartTasksName" type="string" data="{Cmder(cmd)}"/>
 			<value name="StartFarFolders" type="hex" data="00"/>
 			<value name="StartFarEditors" type="hex" data="00"/>
 			<value name="ColorTable00" type="dword" data="00222827"/>
@@ -68,7 +68,7 @@
 			<value name="ConVisible" type="hex" data="00"/>
 			<value name="ConInMode" type="dword" data="ffffffff"/>
 			<value name="UseInjects" type="hex" data="01"/>
-			<value name="SetDefaultTerminal" type="hex" data="00"/>
+			<value name="SetDefaultTerminal" type="hex" data="01"/>
 			<value name="SetDefaultTerminalStartup" type="hex" data="00"/>
 			<value name="SetDefaultTerminalStartupTSA" type="hex" data="01"/>
 			<value name="DefaultTerminalAgressive" type="hex" data="01"/>
@@ -83,7 +83,7 @@
 			<value name="ProcessCmdStart" type="hex" data="01"/>
 			<value name="ConsoleExceptionHandler" type="hex" data="00"/>
 			<value name="UseClink" type="hex" data="01"/>
-			<value name="StoreTaskbarkTasks" type="hex" data="00"/>
+			<value name="StoreTaskbarkTasks" type="hex" data="01"/>
 			<value name="StoreTaskbarCommands" type="hex" data="00"/>
 			<value name="SaveCmdHistory" type="hex" data="00"/>
 			<value name="CmdLineHistory" type="multi">
@@ -94,7 +94,7 @@
 			<value name="Multi.ShowButtons" type="hex" data="01"/>
 			<value name="Multi.ShowSearch" type="hex" data="01"/>
 			<value name="Multi.NumberInCaption" type="hex" data="01"/>
-			<value name="Multi.CloseConfirmFlags" type="hex" data="05"/>
+			<value name="Multi.CloseConfirmFlags" type="hex" data="04"/>
 			<value name="Multi.NewConfirm" type="hex" data="00"/>
 			<value name="Multi.DupConfirm" type="hex" data="00"/>
 			<value name="Multi.DetachConfirm" type="hex" data="01"/>
@@ -102,14 +102,14 @@
 			<value name="Multi.UseNumbers" type="hex" data="01"/>
 			<value name="Multi.UseWinTab" type="hex" data="00"/>
 			<value name="Multi.AutoCreate" type="hex" data="00"/>
-			<value name="Multi.LeaveOnClose" type="hex" data="00"/>
+			<value name="Multi.LeaveOnClose" type="hex" data="02"/>
 			<value name="Multi.HideOnClose" type="hex" data="00"/>
 			<value name="Multi.MinByEsc" type="hex" data="00"/>
 			<value name="MapShiftEscToEsc" type="hex" data="01"/>
 			<value name="Multi.Iterate" type="hex" data="01"/>
 			<value name="Multi.SplitWidth" type="hex" data="04"/>
 			<value name="Multi.SplitHeight" type="hex" data="04"/>
-			<value name="KeyboardHooks" type="hex" data="02"/>
+			<value name="KeyboardHooks" type="hex" data="01"/>
 			<value name="FontName" type="string" data="Consolas"/>
 			<value name="FontName2" type="string" data="Lucida Console"/>
 			<value name="FontAutoSize" type="hex" data="00"/>
@@ -141,18 +141,18 @@
 			<value name="ConWnd Width" type="dword" data="00000078"/>
 			<value name="ConWnd Height" type="dword" data="00000015"/>
 			<value name="Cascaded" type="hex" data="01"/>
-			<value name="ConWnd X" type="dword" data="0000007a"/>
-			<value name="ConWnd Y" type="dword" data="00000074"/>
+			<value name="ConWnd X" type="dword" data="000000b0"/>
+			<value name="ConWnd Y" type="dword" data="000000aa"/>
 			<value name="16bit Height" type="dword" data="00000000"/>
 			<value name="AutoSaveSizePos" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
 			<value name="QuakeStyle" type="hex" data="00"/>
 			<value name="QuakeAnimation" type="dword" data="0000012c"/>
-			<value name="HideCaption" type="hex" data="00"/>
+			<value name="HideCaption" type="hex" data="01"/>
 			<value name="HideChildCaption" type="hex" data="01"/>
 			<value name="FocusInChildWindows" type="hex" data="01"/>
-			<value name="HideCaptionAlways" type="hex" data="00"/>
-			<value name="HideCaptionAlwaysFrame" type="hex" data="00"/>
+			<value name="HideCaptionAlways" type="hex" data="01"/>
+			<value name="HideCaptionAlwaysFrame" type="hex" data="03"/>
 			<value name="HideCaptionAlwaysDelay" type="dword" data="000007d0"/>
 			<value name="HideCaptionAlwaysDisappear" type="dword" data="000007d0"/>
 			<value name="DownShowHiddenMessage" type="hex" data="00"/>
@@ -208,7 +208,7 @@
 			<value name="SendPrintScrn" type="hex" data="00"/>
 			<value name="SendCtrlEsc" type="hex" data="00"/>
 			<value name="Min2Tray" type="hex" data="00"/>
-			<value name="AlwaysShowTrayIcon" type="hex" data="01"/>
+			<value name="AlwaysShowTrayIcon" type="hex" data="00"/>
 			<value name="SafeFarClose" type="hex" data="01"/>
 			<value name="SafeFarCloseMacro" type="string" data=""/>
 			<value name="FARuseASCIIsort" type="hex" data="00"/>
@@ -230,7 +230,7 @@
 			<value name="DragPanel" type="hex" data="02"/>
 			<value name="DragPanelBothEdges" type="hex" data="00"/>
 			<value name="KeyBarRClick" type="hex" data="01"/>
-			<value name="StatusBar.Show" type="hex" data="00"/>
+			<value name="StatusBar.Show" type="hex" data="01"/>
 			<value name="StatusBar.Flags" type="dword" data="00000002"/>
 			<value name="StatusFontFace" type="string" data="Tahoma"/>
 			<value name="StatusFontCharSet" type="dword" data="00000000"/>
@@ -289,7 +289,7 @@
 			<value name="TabDblClick" type="dword" data="00000001"/>
 			<value name="TabBtnDblClick" type="dword" data="00000004"/>
 			<value name="TabsOnTaskBar" type="hex" data="02"/>
-			<value name="TaskBarOverlay" type="hex" data="01"/>
+			<value name="TaskBarOverlay" type="hex" data="00"/>
 			<value name="TaskbarProgress" type="hex" data="01"/>
 			<value name="TabCloseMacro" type="string" data=""/>
 			<value name="TabFontFace" type="string" data="Segoe UI"/>
@@ -320,10 +320,10 @@
 			<value name="AffinityMask" type="dword" data="00000000"/>
 			<value name="SkipFocusEvents" type="hex" data="00"/>
 			<value name="MonitorConsoleLang" type="hex" data="03"/>
-			<value name="DesktopMode" type="hex" data="00"/>
+			<value name="DesktopMode" type="hex" data="01"/>
 			<value name="SnapToDesktopEdges" type="hex" data="01"/>
-			<value name="AlwaysOnTop" type="hex" data="00"/>
-			<value name="SleepInBackground" type="hex" data="01"/>
+			<value name="AlwaysOnTop" type="hex" data="01"/>
+			<value name="SleepInBackground" type="hex" data="00"/>
 			<value name="RetardInactivePanes" type="hex" data="00"/>
 			<value name="MinimizeOnLoseFocus" type="hex" data="00"/>
 			<value name="DisableFarFlashing" type="hex" data="00"/>
@@ -362,7 +362,7 @@
 			<value name="PanView.UsePicView2" type="hex" data="01"/>
 			<value name="PanView.RestoreOnStartup" type="hex" data="00"/>
 			<value name="Update.VerLocation" type="string" data=""/>
-			<value name="Update.CheckOnStartup" type="hex" data="01"/>
+			<value name="Update.CheckOnStartup" type="hex" data="00"/>
 			<value name="Update.CheckHourly" type="hex" data="00"/>
 			<value name="Update.ConfirmDownload" type="hex" data="01"/>
 			<value name="Update.UseBuilds" type="hex" data="01"/>
@@ -375,7 +375,7 @@
 			<value name="Update.DownloadPath" type="string" data="%TEMP%\ConEmu"/>
 			<value name="Update.LeavePackages" type="hex" data="00"/>
 			<value name="Update.PostUpdateCmd" type="string" data="echo Last successful update&gt;ConEmuUpdate.info &amp;&amp; date /t&gt;&gt;ConEmuUpdate.info &amp;&amp; time /t&gt;&gt;ConEmuUpdate.info"/>
-			<key name="HotKeys" modified="2015-06-07 03:29:18" build="150513">
+			<key name="HotKeys" modified="2015-06-08 14:36:57" build="150513">
 				<value name="KeyMacroVersion" type="hex" data="02"/>
 				<value name="Multi.Modifier" type="dword" data="00000011"/>
 				<value name="Multi.ArrowsModifier" type="dword" data="0000005b"/>
@@ -553,27 +553,27 @@
 				<value name="DndRKey" type="hex" data="a2"/>
 				<value name="WndDragKey" type="dword" data="00121101"/>
 			</key>
-			<key name="Tasks" modified="2015-06-07 03:29:18" build="150513">
+			<key name="Tasks" modified="2015-06-08 14:36:57" build="150513">
 				<value name="Count" type="dword" data="00000006"/>
-				<key name="Task1" modified="2015-06-07 03:29:18" build="150513">
-					<value name="Name" type="string" data="{Bash(msys)}"/>
+				<key name="Task1" modified="2015-06-08 14:36:57" build="150513">
+					<value name="Name" type="string" data="{Cmder(cmd)}"/>
 					<value name="Flags" type="dword" data="00000001"/>
+					<value name="Hotkey" type="dword" data="00000000"/>
+					<value name="GuiArgs" type="string" data="/icon &quot;%ConEmuDir%\..\..\icons\cmder.ico&quot; /single"/>
+					<value name="Cmd1" type="string" data="cmd /k &quot;%ConEmuDir%\..\init.bat&quot;  -new_console:d:%CMDER_ROOT%\home"/>
+					<value name="Active" type="dword" data="00000000"/>
+					<value name="Count" type="dword" data="00000001"/>
+				</key>
+				<key name="Task2" modified="2015-06-08 14:36:57" build="150513">
+					<value name="Name" type="string" data="{Bash(msys)}"/>
+					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data="/icon &quot;%ConEmuDir%\..\..\icons\cmder.ico&quot; /single"/>
 					<value name="Cmd1" type="string" data="&quot;%ConEmuDir%\..\msysgit\bin\bash.exe&quot; --login -i"/>
 					<value name="Active" type="dword" data="00000000"/>
 					<value name="Count" type="dword" data="00000001"/>
 				</key>
-				<key name="Task2" modified="2015-06-07 03:29:18" build="150513">
-					<value name="Name" type="string" data="{Cmder(cmd)}"/>
-					<value name="Flags" type="dword" data="00000000"/>
-					<value name="Hotkey" type="dword" data="00000000"/>
-					<value name="GuiArgs" type="string" data="/icon &quot;%ConEmuDir%\..\..\icons\cmder.ico&quot; /single"/>
-					<value name="Cmd1" type="string" data="cmd /k &quot;%ConEmuDir%\..\init.bat&quot;  -new_console:d:%USERPROFILE%"/>
-					<value name="Active" type="dword" data="00000000"/>
-					<value name="Count" type="dword" data="00000001"/>
-				</key>
-				<key name="Task3" modified="2015-06-07 03:29:18" build="150513">
+				<key name="Task3" modified="2015-06-08 14:36:57" build="150513">
 					<value name="Name" type="string" data="{Shellcmd(Admin)}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -582,7 +582,7 @@
 					<value name="Active" type="dword" data="00000000"/>
 					<value name="Count" type="dword" data="00000001"/>
 				</key>
-				<key name="Task4" modified="2015-06-07 03:29:18" build="150513">
+				<key name="Task4" modified="2015-06-08 14:36:57" build="150513">
 					<value name="Name" type="string" data="{Shellcmd(64/32)}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -592,7 +592,7 @@
 					<value name="Active" type="dword" data="00000001"/>
 					<value name="Count" type="dword" data="00000002"/>
 				</key>
-				<key name="Task5" modified="2015-06-07 03:29:18" build="150513">
+				<key name="Task5" modified="2015-06-08 14:36:57" build="150513">
 					<value name="Name" type="string" data="{PowerShell(Admin)}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -601,7 +601,7 @@
 					<value name="Active" type="dword" data="00000000"/>
 					<value name="Count" type="dword" data="00000001"/>
 				</key>
-				<key name="Task6" modified="2015-06-07 03:29:18" build="150513">
+				<key name="Task6" modified="2015-06-08 14:36:57" build="150513">
 					<value name="Name" type="string" data="{Chocolatey(Admin)}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -610,13 +610,19 @@
 					<value name="Active" type="dword" data="00000000"/>
 					<value name="Count" type="dword" data="00000001"/>
 				</key>
+				<key name="&lt;Startup&gt;" modified="2015-06-08 14:37:17" build="150513">
+					<value name="GuiArgs" type="string" data=""/>
+					<value name="Cmd1" type="string" data="&gt;* -cur_console:d:D:\mucmder\etc -cur_console:C:D:\Greens\CmdeRterm\vendor\conemu-maximus5\..\..\icons\cmder.ico cmd /k &quot;%ConEmuDir%\..\init.bat&quot;"/>
+					<value name="Active" type="dword" data="00000001"/>
+					<value name="Count" type="dword" data="00000001"/>
+				</key>
 			</key>
-			<key name="Apps" modified="2015-06-07 03:29:18" build="150513">
+			<key name="Apps" modified="2015-06-08 14:36:57" build="150513">
 				<value name="Count" type="dword" data="00000000"/>
 			</key>
-			<key name="Colors" modified="2015-06-07 03:29:18" build="150513">
+			<key name="Colors" modified="2015-06-08 14:36:57" build="150513">
 				<value name="Count" type="dword" data="00000001"/>
-				<key name="Palette1" modified="2015-06-07 03:29:18" build="150513">
+				<key name="Palette1" modified="2015-06-08 14:36:57" build="150513">
 					<value name="Name" type="string" data="Monokai"/>
 					<value name="ExtendColors" type="hex" data="00"/>
 					<value name="ExtendColorIdx" type="hex" data="0e"/>
