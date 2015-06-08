@@ -1,10 +1,10 @@
 :: Init Script for cmd.exe
 :: Sets some nice defaults
 :: Created as part of cmder project
-
+ 
 :: Find root dir
 @if not defined CMDER_ROOT (
-    for /f "delims=" %%i in ("%ConEmuDir%\..\..") do @set CMDER_ROOT=%%~fi
+    for /f "delims=" %%i in ("%~dp0..") do @set CMDER_ROOT=%%~fi
 )
 
 :: Change the prompt style
@@ -50,7 +50,7 @@
 @doskey /macrofile="%CMDER_ROOT%\config\aliases"
 
 :: Set home path
-@if not defined HOME set HOME=%USERPROFILE%
+@if not defined HOME set HOME=%CMDER_ROOT%\home
 
 @if defined CMDER_START (
     @cd /d "%CMDER_START%"
