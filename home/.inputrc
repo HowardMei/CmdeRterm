@@ -40,6 +40,3 @@ set convert-meta off
 
 # Use Alt/Meta + Delete to delete the preceding word
 "\e[3;3~": kill-word
-
-# Try to turn off the bash terminal beep
-set bell-style none

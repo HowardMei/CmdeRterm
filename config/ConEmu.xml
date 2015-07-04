@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software"> 
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2015-06-08 18:46:35" build="150513">
+		<key name=".Vanilla" modified="2015-07-05 01:06:33" build="150513">
 			<value name="StartType" type="hex" data="02"/>
 			<value name="CmdLine" type="string" data=""/>
 			<value name="StartTasksFile" type="string" data=""/>
@@ -88,7 +88,7 @@
 			<value name="SaveCmdHistory" type="hex" data="00"/>
 			<value name="CmdLineHistory" type="multi">
 			</value>
-			<value name="SingleInstance" type="hex" data="01"/>
+			<value name="SingleInstance" type="hex" data="00"/>
 			<value name="ShowHelpTooltips" type="hex" data="01"/>
 			<value name="Multi" type="hex" data="01"/>
 			<value name="Multi.ShowButtons" type="hex" data="01"/>
@@ -140,9 +140,9 @@
 			<value name="WindowMode" type="dword" data="0000051f"/>
 			<value name="ConWnd Width" type="dword" data="00000078"/>
 			<value name="ConWnd Height" type="dword" data="00000015"/>
-			<value name="Cascaded" type="hex" data="01"/>
-			<value name="ConWnd X" type="dword" data="00000073"/>
-			<value name="ConWnd Y" type="dword" data="00000096"/>
+			<value name="Cascaded" type="hex" data="00"/>
+			<value name="ConWnd X" type="dword" data="00000074"/>
+			<value name="ConWnd Y" type="dword" data="00000055"/>
 			<value name="16bit Height" type="dword" data="00000000"/>
 			<value name="AutoSaveSizePos" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
@@ -375,7 +375,7 @@
 			<value name="Update.DownloadPath" type="string" data="%TEMP%\ConEmu"/>
 			<value name="Update.LeavePackages" type="hex" data="00"/>
 			<value name="Update.PostUpdateCmd" type="string" data="echo Last successful update&gt;ConEmuUpdate.info &amp;&amp; date /t&gt;&gt;ConEmuUpdate.info &amp;&amp; time /t&gt;&gt;ConEmuUpdate.info"/>
-			<key name="HotKeys" modified="2015-06-08 18:27:10" build="150513">
+			<key name="HotKeys" modified="2015-07-05 01:06:33" build="150513">
 				<value name="KeyMacroVersion" type="hex" data="02"/>
 				<value name="Multi.Modifier" type="dword" data="00000011"/>
 				<value name="Multi.ArrowsModifier" type="dword" data="0000005b"/>
@@ -553,9 +553,9 @@
 				<value name="DndRKey" type="hex" data="a2"/>
 				<value name="WndDragKey" type="dword" data="00121101"/>
 			</key>
-			<key name="Tasks" modified="2015-06-08 18:27:10" build="150513">
+			<key name="Tasks" modified="2015-07-05 01:06:33" build="150513">
 				<value name="Count" type="dword" data="00000006"/>
-				<key name="Task1" modified="2015-06-08 18:27:10" build="150513">
+				<key name="Task1" modified="2015-07-05 01:06:33" build="150513">
 					<value name="Name" type="string" data="{Cmder(cmd)}"/>
 					<value name="Flags" type="dword" data="00000001"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -564,7 +564,7 @@
 					<value name="Active" type="dword" data="00000000"/>
 					<value name="Count" type="dword" data="00000001"/>
 				</key>
-				<key name="Task2" modified="2015-06-08 18:27:10" build="150513">
+				<key name="Task2" modified="2015-07-05 01:06:33" build="150513">
 					<value name="Name" type="string" data="{Bash(msys)}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -573,7 +573,7 @@
 					<value name="Active" type="dword" data="00000000"/>
 					<value name="Count" type="dword" data="00000001"/>
 				</key>
-				<key name="Task3" modified="2015-06-08 18:27:10" build="150513">
+				<key name="Task3" modified="2015-07-05 01:06:33" build="150513">
 					<value name="Name" type="string" data="{Shellcmd(Admin)}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -582,7 +582,7 @@
 					<value name="Active" type="dword" data="00000000"/>
 					<value name="Count" type="dword" data="00000001"/>
 				</key>
-				<key name="Task4" modified="2015-06-08 18:27:10" build="150513">
+				<key name="Task4" modified="2015-07-05 01:06:33" build="150513">
 					<value name="Name" type="string" data="{Shellcmd(64/32)}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -592,7 +592,7 @@
 					<value name="Active" type="dword" data="00000001"/>
 					<value name="Count" type="dword" data="00000002"/>
 				</key>
-				<key name="Task5" modified="2015-06-08 18:27:10" build="150513">
+				<key name="Task5" modified="2015-07-05 01:06:33" build="150513">
 					<value name="Name" type="string" data="{PowerShell(Admin)}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -601,7 +601,7 @@
 					<value name="Active" type="dword" data="00000000"/>
 					<value name="Count" type="dword" data="00000001"/>
 				</key>
-				<key name="Task6" modified="2015-06-08 18:27:10" build="150513">
+				<key name="Task6" modified="2015-07-05 01:06:33" build="150513">
 					<value name="Name" type="string" data="{Chocolatey(Admin)}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -617,12 +617,12 @@
 					<value name="Count" type="dword" data="00000001"/>
 				</key>
 			</key>
-			<key name="Apps" modified="2015-06-08 18:27:10" build="150513">
+			<key name="Apps" modified="2015-07-05 01:06:33" build="150513">
 				<value name="Count" type="dword" data="00000000"/>
 			</key>
-			<key name="Colors" modified="2015-06-08 18:27:10" build="150513">
+			<key name="Colors" modified="2015-07-05 01:06:33" build="150513">
 				<value name="Count" type="dword" data="00000001"/>
-				<key name="Palette1" modified="2015-06-08 18:27:10" build="150513">
+				<key name="Palette1" modified="2015-07-05 01:06:33" build="150513">
 					<value name="Name" type="string" data="Monokai"/>
 					<value name="ExtendColors" type="hex" data="00"/>
 					<value name="ExtendColorIdx" type="hex" data="0e"/>

@@ -1,12 +1,13 @@
-termcap -lf
- 
-.* text eol=lf
+* binary
+.* binary
 *_ binary
 *.dll binary
 *.pdf binary
 *.so binary
 *.wav binary
 *.zip binary
+*.bz2 binary
+*.gz binary
 *.x32 binary
 *.x64 binary
 *.cmd binary
